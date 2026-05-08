@@ -6,6 +6,7 @@ const SEARCH_RESULTS_PER_PAGE = 100;
 const MAX_PAGES = 10;
 const FETCH_RETRY_COUNT = 3;
 const FETCH_RETRY_DELAY_MS = 500;
+const FETCH_TIMEOUT_MS = 10_000;
 
 function normalizeRepositoryReference(value) {
   if (typeof value !== "string") return null;
@@ -27,6 +28,7 @@ async function fetchJson(url, headers = {}) {
   for (let attempt = 1; attempt <= FETCH_RETRY_COUNT; attempt += 1) {
     try {
       const response = await fetch(url, {
+        signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
         headers: {
           Accept: "application/vnd.github+json",
           "User-Agent": "minkin.tech-build-script",
@@ -120,7 +122,59 @@ async function fetchContributedRepos(username) {
   return Array.from(repositories.values());
 }
 
-async function fetchLatestActivity(username) {
+async function fetchLatestCommitSearchResult(username) {
+  const query = encodeURIComponent(`author:${username} is:public`);
+  const payload = await fetchJson(
+    `https://api.github.com/search/commits?q=${query}&sort=author-date&order=desc&per_page=1`,
+    {
+      Accept: "application/vnd.github.cloak-preview+json",
+      "X-GitHub-Api-Version": "2022-11-28"
+    }
+  );
+
+  return payload.items?.[0] ?? null;
+}
+
+async function fetchLatestActivityFromCommitSearch(username) {
+  const latestCommit = await fetchLatestCommitSearchResult(username);
+  if (!latestCommit?.repository?.full_name) {
+    return null;
+  }
+
+  const repoName = latestCommit.repository.full_name;
+  const repoUrl = latestCommit.repository.html_url ?? `https://github.com/${repoName}`;
+  const commitSha = typeof latestCommit.sha === "string" && latestCommit.sha ? latestCommit.sha.slice(0, 7) : "n/a";
+  const commitUrl =
+    latestCommit.html_url ??
+    (typeof latestCommit.sha === "string" && latestCommit.sha ? `${repoUrl}/commit/${latestCommit.sha}` : repoUrl);
+  const commitMessage = latestCommit.commit?.message?.trim() || "Коммит без описания";
+  const createdAt = normalizeDate(
+    latestCommit.commit?.author?.date ?? latestCommit.commit?.committer?.date ?? latestCommit.repository?.pushed_at
+  );
+
+  let repoDescription = latestCommit.repository?.description ?? "";
+  if (!repoDescription) {
+    try {
+      const repoData = await fetchRepositoryByFullName(repoName);
+      repoDescription = repoData.description ?? "";
+    } catch {
+      repoDescription = "";
+    }
+  }
+
+  return {
+    createdAt,
+    commitSha,
+    commitUrl,
+    commitMessage,
+    repoName,
+    repoUrl,
+    projectDescription:
+      repoDescription || "Описание проекта не заполнено, ориентируйся по сообщению коммита."
+  };
+}
+
+async function fetchLatestActivityFromPublicEvents(username) {
   const events = await fetchJson(`https://api.github.com/users/${username}/events/public?per_page=30`);
   const pushEvent = events.find((event) => event.type === "PushEvent" && event.repo?.name);
 
@@ -163,6 +217,19 @@ async function fetchLatestActivity(username) {
     projectDescription:
       repoDescription || "Описание проекта не заполнено, ориентируйся по сообщению коммита."
   };
+}
+
+async function fetchLatestActivity(username) {
+  try {
+    const searchActivity = await fetchLatestActivityFromCommitSearch(username);
+    if (searchActivity) {
+      return searchActivity;
+    }
+  } catch {
+    // Fall back to the public events feed when commit search is temporarily unavailable.
+  }
+
+  return fetchLatestActivityFromPublicEvents(username);
 }
 
 async function readPreviousPayload() {

@@ -1,31 +1,17 @@
 {
-  "generatedAt": "2026-04-07T15:18:52.381Z",
+  "generatedAt": "2026-05-08T18:18:12.940Z",
   "source": "github",
   "username": "minkinad",
   "activity": {
-    "createdAt": "2026-04-07T14:14:42.000Z",
-    "commitSha": "8ecf5ab",
-    "commitUrl": "https://github.com/minkinad/minkin.tech/commit/8ecf5abc47eaf51d3c89b886dbb7800290246901",
-    "commitMessage": "fix(site): refresh github profile data and home spacing",
+    "createdAt": "2026-05-08T18:09:32.000Z",
+    "commitSha": "8638847",
+    "commitUrl": "https://github.com/minkinad/minkin.tech/commit/863884735f305ee3747d41dcbee569598aa6d03c",
+    "commitMessage": "Коммит без описания",
     "repoName": "minkinad/minkin.tech",
     "repoUrl": "https://github.com/minkinad/minkin.tech",
-    "projectDescription": "My personal website"
+    "projectDescription": "Описание проекта не заполнено, ориентируйся по сообщению коммита."
   },
   "repositories": [
-    {
-      "fullName": "minkinad/oz-test",
-      "name": "oz-test",
-      "owner": "minkinad",
-      "htmlUrl": "https://github.com/minkinad/oz-test",
-      "description": "",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-04-07T14:19:28.000Z",
-      "isPinned": false,
-      "startedAt": null
-    },
     {
       "fullName": "minkinad/minkin.tech",
       "name": "minkin.tech",
@@ -34,154 +20,58 @@
       "description": "My personal website",
       "language": "Vue",
       "topics": [],
-      "pushedAt": "2026-04-07T14:14:41.000Z",
-      "updatedAt": "2026-04-07T14:15:41.000Z",
-      "activityAt": "2026-04-07T14:14:38.000Z",
-      "isPinned": false,
-      "startedAt": null
+      "startedAt": "2024-10-30T08:55:02.000Z",
+      "pushedAt": "2026-05-08T18:09:31.000Z",
+      "updatedAt": "2026-05-08T18:09:40.000Z",
+      "activityAt": "2026-05-08T18:09:31.000Z",
+      "isPinned": false
     },
     {
-      "fullName": "nppweb/contracts",
-      "name": "contracts",
-      "owner": "nppweb",
-      "htmlUrl": "https://github.com/nppweb/contracts",
-      "description": "Common GraphQL and JSON Schema contracts for platform services",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-04-07T13:30:40.000Z",
-      "isPinned": false,
-      "startedAt": null
-    },
-    {
-      "fullName": "nppweb/npp-web",
-      "name": "npp-web",
-      "owner": "nppweb",
-      "htmlUrl": "https://github.com/nppweb/npp-web",
-      "description": "Vue frontend for the nppweb procurement monitoring platform.",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-04-07T13:30:40.000Z",
-      "isPinned": true,
-      "startedAt": null
-    },
-    {
-      "fullName": "nppweb/scrape-helper",
-      "name": "scrape-helper",
-      "owner": "nppweb",
-      "htmlUrl": "https://github.com/nppweb/scrape-helper",
-      "description": "Shared GraphQL and event contracts used across the platform.",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-04-07T13:30:40.000Z",
-      "isPinned": false,
-      "startedAt": null
-    },
-    {
-      "fullName": "nppweb/npp-backend",
-      "name": "npp-backend",
-      "owner": "nppweb",
-      "htmlUrl": "https://github.com/nppweb/npp-backend",
-      "description": "NestJS GraphQL API for procurement data, auth, and platform operations.",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-04-07T13:30:40.000Z",
-      "isPinned": false,
-      "startedAt": null
-    },
-    {
-      "fullName": "nppweb/processing-worker",
-      "name": "processing-worker",
-      "owner": "nppweb",
-      "htmlUrl": "https://github.com/nppweb/processing-worker",
-      "description": "Worker service that normalizes raw events and ingests them into the backend.",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-04-07T13:30:40.000Z",
-      "isPinned": false,
-      "startedAt": "2026-03-11T13:00:26+03:00"
-    },
-    {
-      "fullName": "nppweb/.github",
-      "name": ".github",
-      "owner": "nppweb",
-      "htmlUrl": "https://github.com/nppweb/.github",
-      "description": "General Information about NPP Web",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-04-06T21:12:35.000Z",
-      "isPinned": false,
-      "startedAt": "2026-04-05T01:19:33+03:00"
-    },
-    {
-      "fullName": "minkinad/.github",
-      "name": ".github",
+      "fullName": "minkinad/notion",
+      "name": "notion",
       "owner": "minkinad",
-      "htmlUrl": "https://github.com/minkinad/.github",
+      "htmlUrl": "https://github.com/minkinad/notion",
       "description": "",
       "language": "",
       "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-04-06T18:13:41.000Z",
-      "isPinned": false,
-      "startedAt": null
+      "startedAt": "2026-05-08T18:00:57.000Z",
+      "pushedAt": "2026-05-08T18:00:58.000Z",
+      "updatedAt": "2026-05-08T18:01:02.000Z",
+      "activityAt": "2026-05-08T18:00:58.000Z",
+      "isPinned": false
     },
     {
-      "fullName": "minkinad/contribute",
-      "name": "contribute",
+      "fullName": "minkinad/frontend-interview-prep",
+      "name": "frontend-interview-prep",
       "owner": "minkinad",
-      "htmlUrl": "https://github.com/minkinad/contribute",
-      "description": "",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-04-06T18:12:30.000Z",
-      "isPinned": false,
-      "startedAt": "2026-04-06T21:12:30+03:00"
+      "htmlUrl": "https://github.com/minkinad/frontend-interview-prep",
+      "description": "Production-grade interview preparation platform for modern frontend engineers.",
+      "language": "MDX",
+      "topics": [
+        "frontend",
+        "interview"
+      ],
+      "startedAt": "2026-05-08T16:25:56.000Z",
+      "pushedAt": "2026-05-08T17:49:15.000Z",
+      "updatedAt": "2026-05-08T17:50:37.000Z",
+      "activityAt": "2026-05-08T17:49:15.000Z",
+      "isPinned": false
     },
     {
-      "fullName": "nppweb/infra",
-      "name": "infra",
-      "owner": "nppweb",
-      "htmlUrl": "https://github.com/nppweb/infra",
-      "description": "Docker Compose infrastructure for running and deploying the full nppweb stack.",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-04-05T18:55:50.000Z",
-      "isPinned": false,
-      "startedAt": null
-    },
-    {
-      "fullName": "minkinad/pulseboard",
-      "name": "pulseboard",
+      "fullName": "minkinad/notification-hub",
+      "name": "notification-hub",
       "owner": "minkinad",
-      "htmlUrl": "https://github.com/minkinad/pulseboard",
-      "description": "Interactive financial analytics dashboard with drag-and-drop widgets, filtering, and CSV export.",
+      "htmlUrl": "https://github.com/minkinad/notification-hub",
+      "description": "Event-driven notification service built with TypeScript and NestJS. Supports async processing, multi-channel delivery (Email, Telegram, Webhooks), and scalable queue-based architecture.",
       "language": "TypeScript",
       "topics": [
-        "analytics-dashboard",
-        "chartsjs"
+        "saas"
       ],
-      "pushedAt": "2026-04-04T12:43:16.000Z",
-      "updatedAt": "2026-04-04T12:43:19.000Z",
-      "activityAt": "2026-04-04T12:43:02.000Z",
-      "isPinned": true,
-      "startedAt": null
+      "startedAt": "2026-05-02T14:11:20.000Z",
+      "pushedAt": "2026-05-08T17:49:08.000Z",
+      "updatedAt": "2026-05-08T17:49:12.000Z",
+      "activityAt": "2026-05-08T17:49:08.000Z",
+      "isPinned": false
     },
     {
       "fullName": "minkinad/minkinad",
@@ -191,55 +81,60 @@
       "description": "Personal information",
       "language": "",
       "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-04-04T11:12:06.000Z",
-      "isPinned": false,
-      "startedAt": null
+      "startedAt": "2024-10-18T19:29:30.000Z",
+      "pushedAt": "2026-05-08T16:43:38.000Z",
+      "updatedAt": "2026-05-08T16:43:42.000Z",
+      "activityAt": "2026-05-08T16:43:38.000Z",
+      "isPinned": false
     },
     {
-      "fullName": "minkinad/StackMIREA",
-      "name": "StackMIREA",
+      "fullName": "minkinad/api-sdk-generator",
+      "name": "api-sdk-generator",
       "owner": "minkinad",
-      "htmlUrl": "https://github.com/minkinad/StackMIREA",
-      "description": "Documentation platform for IT courses at MIREA, structured as a modern knowledge base.",
-      "language": "MDX",
-      "topics": [
-        "education"
-      ],
-      "pushedAt": "2026-04-04T11:04:00.000Z",
-      "updatedAt": "2026-04-04T11:04:03.000Z",
-      "activityAt": "2026-04-04T11:03:41.000Z",
-      "isPinned": true,
-      "startedAt": null
-    },
-    {
-      "fullName": "minkinad/focusboard",
-      "name": "focusboard",
-      "owner": "minkinad",
-      "htmlUrl": "https://github.com/minkinad/focusboard",
-      "description": "Explainable decision-support workspace for turning messy questions into structured, confident decisions.",
+      "htmlUrl": "https://github.com/minkinad/api-sdk-generator",
+      "description": "TypeScript SDK generator from OpenAPI with CLI, typed clients, and automated release workflows.",
       "language": "TypeScript",
-      "topics": [],
-      "pushedAt": "2026-04-03T18:03:52.000Z",
-      "updatedAt": "2026-04-03T18:06:48.000Z",
-      "activityAt": "2026-04-03T18:03:17.000Z",
-      "isPinned": true,
-      "startedAt": "2024-11-13T16:40:23+03:00"
+      "topics": [
+        "api",
+        "sdk"
+      ],
+      "startedAt": "2026-05-05T15:46:39.000Z",
+      "pushedAt": "2026-05-07T21:08:11.000Z",
+      "updatedAt": "2026-05-07T21:07:11.000Z",
+      "activityAt": "2026-05-07T21:08:11.000Z",
+      "isPinned": false
     },
     {
-      "fullName": "minkinad/1990",
-      "name": "1990",
-      "owner": "minkinad",
-      "htmlUrl": "https://github.com/minkinad/1990",
-      "description": "",
-      "language": "",
-      "topics": [],
-      "pushedAt": "2026-03-25T21:49:43.000Z",
-      "updatedAt": "2026-03-25T21:49:43.000Z",
-      "activityAt": "2026-03-25T21:49:43.000Z",
-      "isPinned": false,
-      "startedAt": null
+      "fullName": "nppweb/npp-web",
+      "name": "npp-web",
+      "owner": "nppweb",
+      "htmlUrl": "https://github.com/nppweb/npp-web",
+      "description": "Vue frontend for the nppweb procurement monitoring platform.",
+      "language": "Vue",
+      "topics": [
+        "dashboard"
+      ],
+      "startedAt": "2026-03-24T18:08:10.000Z",
+      "pushedAt": "2026-05-07T20:33:47.000Z",
+      "updatedAt": "2026-05-07T20:33:50.000Z",
+      "activityAt": "2026-05-07T20:33:47.000Z",
+      "isPinned": true
+    },
+    {
+      "fullName": "g10bus/myInventory",
+      "name": "myInventory",
+      "owner": "g10bus",
+      "htmlUrl": "https://github.com/g10bus/myInventory",
+      "description": "Web applications for inventory control of material assets assigned to enterprise employees.",
+      "language": "Python",
+      "topics": [
+        "inventary-control"
+      ],
+      "startedAt": "2026-04-09T11:32:52.000Z",
+      "pushedAt": "2026-05-07T13:20:41.000Z",
+      "updatedAt": "2026-05-07T13:20:47.000Z",
+      "activityAt": "2026-05-07T13:20:41.000Z",
+      "isPinned": false
     },
     {
       "fullName": "nimjs/nim-ui",
@@ -247,83 +142,17 @@
       "owner": "nimjs",
       "htmlUrl": "https://github.com/nimjs/nim-ui",
       "description": "Open-source React component ecosystem by nimjs with design tokens, typed registry, CLI scaffolding, and system-first docs.",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-03-25T19:54:01.000Z",
-      "isPinned": true,
-      "startedAt": null
-    },
-    {
-      "fullName": "nimjs/.github",
-      "name": ".github",
-      "owner": "nimjs",
-      "htmlUrl": "https://github.com/nimjs/.github",
-      "description": "About",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-03-25T15:56:24.000Z",
-      "isPinned": false,
-      "startedAt": null
-    },
-    {
-      "fullName": "mnplyeoman/.github",
-      "name": ".github",
-      "owner": "mnplyeoman",
-      "htmlUrl": "https://github.com/mnplyeoman/.github",
-      "description": "About",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-03-24T18:26:44.000Z",
-      "isPinned": false,
-      "startedAt": null
-    },
-    {
-      "fullName": "pyorbit/.github",
-      "name": ".github",
-      "owner": "pyorbit",
-      "htmlUrl": "https://github.com/pyorbit/.github",
-      "description": "About",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-03-24T18:22:55.000Z",
-      "isPinned": false,
-      "startedAt": null
-    },
-    {
-      "fullName": "nimjs/nimjs",
-      "name": "nimjs",
-      "owner": "nimjs",
-      "htmlUrl": "https://github.com/nimjs/nimjs",
-      "description": "js library",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-03-23T23:57:17.000Z",
-      "isPinned": false,
-      "startedAt": null
-    },
-    {
-      "fullName": "mnplyeoman/yeoman-feedback",
-      "name": "yeoman-feedback",
-      "owner": "mnplyeoman",
-      "htmlUrl": "https://github.com/mnplyeoman/yeoman-feedback",
-      "description": "Репозиторий для баг-репортов, UX-фидбека и идей по развитию mnplyeoman.",
-      "language": "",
-      "topics": [],
-      "pushedAt": null,
-      "updatedAt": null,
-      "activityAt": "2026-03-23T23:29:12.000Z",
-      "isPinned": false,
-      "startedAt": null
+      "language": "TypeScript",
+      "topics": [
+        "component-library",
+        "design-system",
+        "ui"
+      ],
+      "startedAt": "2026-03-23T22:20:57.000Z",
+      "pushedAt": "2026-05-06T14:56:53.000Z",
+      "updatedAt": "2026-04-14T19:14:24.000Z",
+      "activityAt": "2026-05-06T14:56:53.000Z",
+      "isPinned": true
     },
     {
       "fullName": "minkinad/tracker",
@@ -335,25 +164,105 @@
       "topics": [
         "tracker"
       ],
-      "pushedAt": "2026-03-22T18:23:27.000Z",
-      "updatedAt": "2026-03-24T18:39:37.000Z",
-      "activityAt": "2026-03-22T18:23:12.000Z",
-      "isPinned": false,
-      "startedAt": "2025-09-07T19:19:19+03:00"
+      "startedAt": "2025-09-07T16:19:19.000Z",
+      "pushedAt": "2026-05-05T15:32:58.000Z",
+      "updatedAt": "2026-05-05T15:33:35.000Z",
+      "activityAt": "2026-05-05T15:32:58.000Z",
+      "isPinned": false
     },
     {
-      "fullName": "minkinad/resume",
-      "name": "resume",
+      "fullName": "rbdnv/tg_bot_golang",
+      "name": "tg_bot_golang",
+      "owner": "rbdnv",
+      "htmlUrl": "https://github.com/rbdnv/tg_bot_golang",
+      "description": "The bot saves the links entered by the user through the dialog box, and the bot will send a random article through the dialog after the nth time.",
+      "language": "Go",
+      "topics": [
+        "go",
+        "tgbot"
+      ],
+      "startedAt": "2025-01-09T15:45:45.000Z",
+      "pushedAt": "2026-05-05T14:56:26.000Z",
+      "updatedAt": "2026-05-05T17:31:02.000Z",
+      "activityAt": "2026-05-05T14:56:26.000Z",
+      "isPinned": false
+    },
+    {
+      "fullName": "minkinad/StackMIREA",
+      "name": "StackMIREA",
       "owner": "minkinad",
-      "htmlUrl": "https://github.com/minkinad/resume",
-      "description": "Résumé Minkin",
+      "htmlUrl": "https://github.com/minkinad/StackMIREA",
+      "description": "Documentation platform for IT courses at MIREA, structured as a modern knowledge base.",
+      "language": "MDX",
+      "topics": [
+        "education"
+      ],
+      "startedAt": "2024-10-23T14:04:39.000Z",
+      "pushedAt": "2026-05-05T08:52:02.000Z",
+      "updatedAt": "2026-05-05T08:52:05.000Z",
+      "activityAt": "2026-05-05T08:52:02.000Z",
+      "isPinned": true
+    },
+    {
+      "fullName": "minkinad/git-profile-stats",
+      "name": "git-profile-stats",
+      "owner": "minkinad",
+      "htmlUrl": "https://github.com/minkinad/git-profile-stats",
+      "description": "Minimalist GitHub analytics dashboard to explore profiles, repos, and stats.",
+      "language": "TypeScript",
+      "topics": [
+        "github",
+        "stats"
+      ],
+      "startedAt": "2026-04-14T21:39:34.000Z",
+      "pushedAt": "2026-05-04T19:37:13.000Z",
+      "updatedAt": "2026-05-04T19:37:17.000Z",
+      "activityAt": "2026-05-04T19:37:13.000Z",
+      "isPinned": false
+    },
+    {
+      "fullName": "minkinad/adm-parser",
+      "name": "adm-parser",
+      "owner": "minkinad",
+      "htmlUrl": "https://github.com/minkinad/adm-parser",
+      "description": "Modern HTML parser ecosystem with TypeScript core, CLI, and AST visualization tools.",
+      "language": "TypeScript",
+      "topics": [],
+      "startedAt": "2025-07-26T19:30:45.000Z",
+      "pushedAt": "2026-04-30T18:23:05.000Z",
+      "updatedAt": "2026-04-30T18:23:09.000Z",
+      "activityAt": "2026-04-30T18:23:05.000Z",
+      "isPinned": true
+    },
+    {
+      "fullName": "g10bus/me",
+      "name": "me",
+      "owner": "g10bus",
+      "htmlUrl": "https://github.com/g10bus/me",
+      "description": "My person website",
+      "language": "TypeScript",
+      "topics": [
+        "me"
+      ],
+      "startedAt": "2026-04-21T15:22:15.000Z",
+      "pushedAt": "2026-04-22T17:02:42.000Z",
+      "updatedAt": "2026-04-22T17:09:43.000Z",
+      "activityAt": "2026-04-22T17:02:42.000Z",
+      "isPinned": false
+    },
+    {
+      "fullName": "minkinad/contribute",
+      "name": "contribute",
+      "owner": "minkinad",
+      "htmlUrl": "https://github.com/minkinad/contribute",
+      "description": "Contribution guide for my projects",
       "language": "",
       "topics": [],
-      "pushedAt": "2026-03-19T18:54:53.000Z",
-      "updatedAt": "2026-03-19T18:54:53.000Z",
-      "activityAt": "2026-03-19T18:54:53.000Z",
-      "isPinned": false,
-      "startedAt": null
+      "startedAt": "2026-04-06T18:12:30.000Z",
+      "pushedAt": "2026-04-14T21:51:35.000Z",
+      "updatedAt": "2026-04-14T21:51:38.000Z",
+      "activityAt": "2026-04-14T21:51:35.000Z",
+      "isPinned": false
     },
     {
       "fullName": "minkinad/work-activity",
@@ -363,11 +272,98 @@
       "description": "Client-server system for tracking and analyzing employee work activity.",
       "language": "C++",
       "topics": [],
-      "pushedAt": "2026-03-18T14:09:02.000Z",
-      "updatedAt": "2026-03-24T18:41:27.000Z",
-      "activityAt": "2026-03-18T14:08:51.000Z",
-      "isPinned": false,
-      "startedAt": "2025-06-07T15:54:48+03:00"
+      "startedAt": "2025-06-07T12:54:48.000Z",
+      "pushedAt": "2026-04-14T19:16:31.000Z",
+      "updatedAt": "2026-04-14T19:18:17.000Z",
+      "activityAt": "2026-04-14T19:16:31.000Z",
+      "isPinned": false
+    },
+    {
+      "fullName": "minkinad/pulseboard",
+      "name": "pulseboard",
+      "owner": "minkinad",
+      "htmlUrl": "https://github.com/minkinad/pulseboard",
+      "description": "Interactive financial analytics dashboard with drag-and-drop widgets, filtering, and CSV export.",
+      "language": "TypeScript",
+      "topics": [],
+      "startedAt": "2026-03-18T18:39:46.000Z",
+      "pushedAt": "2026-04-14T19:13:13.000Z",
+      "updatedAt": "2026-04-14T22:04:56.000Z",
+      "activityAt": "2026-04-14T19:13:13.000Z",
+      "isPinned": true
+    },
+    {
+      "fullName": "minkinad/focusboard",
+      "name": "focusboard",
+      "owner": "minkinad",
+      "htmlUrl": "https://github.com/minkinad/focusboard",
+      "description": "Explainable decision-support workspace for turning messy questions into structured, confident decisions.",
+      "language": "TypeScript",
+      "topics": [],
+      "startedAt": "2024-11-13T13:40:23.000Z",
+      "pushedAt": "2026-04-14T19:12:07.000Z",
+      "updatedAt": "2026-04-14T19:12:11.000Z",
+      "activityAt": "2026-04-14T19:12:07.000Z",
+      "isPinned": true
+    },
+    {
+      "fullName": "minkinad/home-page",
+      "name": "home-page",
+      "owner": "minkinad",
+      "htmlUrl": "https://github.com/minkinad/home-page",
+      "description": "Brauser Home Page",
+      "language": "JavaScript",
+      "topics": [],
+      "startedAt": "2026-04-12T18:58:19.000Z",
+      "pushedAt": "2026-04-14T17:14:33.000Z",
+      "updatedAt": "2026-04-14T17:14:37.000Z",
+      "activityAt": "2026-04-14T17:14:33.000Z",
+      "isPinned": false
+    },
+    {
+      "fullName": "minkinad/.github",
+      "name": ".github",
+      "owner": "minkinad",
+      "htmlUrl": "https://github.com/minkinad/.github",
+      "description": "The default community health files for all my repos on GitHub",
+      "language": "",
+      "topics": [],
+      "startedAt": "2026-04-06T18:13:41.000Z",
+      "pushedAt": "2026-04-14T15:27:12.000Z",
+      "updatedAt": "2026-04-14T15:27:16.000Z",
+      "activityAt": "2026-04-14T15:27:12.000Z",
+      "isPinned": false
+    },
+    {
+      "fullName": "minkinad/oz-test",
+      "name": "oz-test",
+      "owner": "minkinad",
+      "htmlUrl": "https://github.com/minkinad/oz-test",
+      "description": "Ozon Frontend Test Task",
+      "language": "JavaScript",
+      "topics": [
+        "ozon",
+        "test"
+      ],
+      "startedAt": "2026-04-07T14:19:27.000Z",
+      "pushedAt": "2026-04-08T06:45:49.000Z",
+      "updatedAt": "2026-04-08T06:48:48.000Z",
+      "activityAt": "2026-04-08T06:45:49.000Z",
+      "isPinned": false
+    },
+    {
+      "fullName": "minkinad/1990",
+      "name": "1990",
+      "owner": "minkinad",
+      "htmlUrl": "https://github.com/minkinad/1990",
+      "description": "",
+      "language": "",
+      "topics": [],
+      "startedAt": "2026-03-25T21:49:43.000Z",
+      "pushedAt": "2026-03-25T21:49:43.000Z",
+      "updatedAt": "2026-03-25T21:49:43.000Z",
+      "activityAt": "2026-03-25T21:49:43.000Z",
+      "isPinned": false
     },
     {
       "fullName": "minkinad/crossroad",
@@ -382,27 +378,11 @@
         "spa",
         "web-app"
       ],
+      "startedAt": "2024-10-18T13:34:24.000Z",
       "pushedAt": "2026-03-12T17:05:09.000Z",
       "updatedAt": "2026-03-24T18:42:08.000Z",
-      "activityAt": "2026-03-12T17:04:44.000Z",
-      "isPinned": false,
-      "startedAt": "2024-10-18T16:34:24+03:00"
-    },
-    {
-      "fullName": "minkinad/adm-parser",
-      "name": "adm-parser",
-      "owner": "minkinad",
-      "htmlUrl": "https://github.com/minkinad/adm-parser",
-      "description": "Modern HTML parser ecosystem with TypeScript core, CLI, and AST visualization tools.",
-      "language": "TypeScript",
-      "topics": [
-        "parser"
-      ],
-      "pushedAt": "2026-03-12T13:13:04.000Z",
-      "updatedAt": "2026-03-24T18:42:22.000Z",
-      "activityAt": "2026-03-12T13:12:56.000Z",
-      "isPinned": true,
-      "startedAt": "2025-07-26T22:30:45+03:00"
+      "activityAt": "2026-03-12T17:05:09.000Z",
+      "isPinned": false
     },
     {
       "fullName": "minkinad/cboost",
@@ -412,11 +392,11 @@
       "description": "Full-stack productivity app for managing tasks and habits with scalable architecture.",
       "language": "TypeScript",
       "topics": [],
+      "startedAt": "2025-07-03T17:10:36.000Z",
       "pushedAt": "2026-03-02T20:06:27.000Z",
       "updatedAt": "2026-03-24T18:43:09.000Z",
-      "activityAt": "2026-03-02T20:06:26.000Z",
-      "isPinned": false,
-      "startedAt": "2025-07-03T20:10:36+03:00"
+      "activityAt": "2026-03-02T20:06:27.000Z",
+      "isPinned": false
     },
     {
       "fullName": "minkinad/crm-system",
@@ -426,11 +406,11 @@
       "description": "Multi-user CRM platform with RBAC, authentication, audit logs, and API versioning.",
       "language": "TypeScript",
       "topics": [],
+      "startedAt": "2025-06-29T12:20:35.000Z",
       "pushedAt": "2026-02-21T16:28:34.000Z",
-      "updatedAt": "2026-03-24T18:43:29.000Z",
-      "activityAt": "2026-02-21T16:28:24.000Z",
-      "isPinned": false,
-      "startedAt": "2025-06-29T15:20:35+03:00"
+      "updatedAt": "2026-04-14T19:17:40.000Z",
+      "activityAt": "2026-02-21T16:28:34.000Z",
+      "isPinned": false
     },
     {
       "fullName": "pyorbit/pyorbit",
@@ -439,12 +419,15 @@
       "htmlUrl": "https://github.com/pyorbit/pyorbit",
       "description": "pymastery main dashboard",
       "language": "TypeScript",
-      "topics": [],
+      "topics": [
+        "python",
+        "study"
+      ],
+      "startedAt": "2025-09-03T20:24:58.000Z",
       "pushedAt": "2025-10-15T18:14:11.000Z",
-      "updatedAt": "2026-04-04T09:18:20.000Z",
-      "activityAt": "2025-10-15T18:14:10.000Z",
-      "isPinned": false,
-      "startedAt": "2025-09-03T23:24:58+03:00"
+      "updatedAt": "2026-04-14T21:55:58.000Z",
+      "activityAt": "2025-10-15T18:14:11.000Z",
+      "isPinned": false
     }
   ]
 }

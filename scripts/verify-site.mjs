@@ -5,7 +5,6 @@ import {
   DIST_DIR,
   GENERATED_GITHUB_PATH,
   PROJECTS_DIR,
-  ROOT_DIR,
   readSiteConfig,
   readMarkdownEntries
 } from "./site-utils.mjs";
@@ -48,29 +47,30 @@ async function verifyGeneratedGithubPayload() {
 }
 
 async function verifyBuildOutput() {
-  const projectEntries = await readMarkdownEntries(PROJECTS_DIR);
+  const [blogEntries, projectEntries] = await Promise.all([
+    readMarkdownEntries(BLOG_DIR),
+    readMarkdownEntries(PROJECTS_DIR)
+  ]);
   const requiredFiles = [
     "index.html",
     "404.html",
+    path.join("404", "index.html"),
     "CNAME",
     "sitemap.xml",
     "robots.txt",
     path.join("blog", "index.html"),
     path.join("blog", "rss.xml"),
+    path.join("talks", "index.html"),
+    path.join("support", "index.html"),
     path.join("projects", "index.html"),
     path.join("contact", "index.html")
-  ].concat(projectEntries.map((entry) => path.join("projects", entry.slug, "index.html")));
+  ]
+    .concat(blogEntries.map((entry) => path.join("blog", entry.slug, "index.html")))
+    .concat(projectEntries.map((entry) => path.join("projects", entry.slug, "index.html")));
 
   await Promise.all(requiredFiles.map((relativePath) => access(path.join(DIST_DIR, relativePath))));
 
-  const htmlFiles = [
-    "index.html",
-    "404.html",
-    path.join("blog", "index.html"),
-    path.join("projects", "index.html"),
-    path.join("contact", "index.html"),
-    ...projectEntries.map((entry) => path.join("projects", entry.slug, "index.html"))
-  ];
+  const htmlFiles = requiredFiles.filter((relativePath) => relativePath.endsWith(".html"));
 
   for (const relativePath of htmlFiles) {
     const html = await readFile(path.join(DIST_DIR, relativePath), "utf8");

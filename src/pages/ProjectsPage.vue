@@ -1,22 +1,61 @@
 <script setup lang="ts">
+import { computed, onMounted, ref } from "vue";
+import ProjectEntryRow from "../components/ProjectEntryRow.vue";
+import { getProjects, type ContentEntry } from "../lib/content";
 import { usePageMeta } from "../lib/meta";
 import { getProjectYearSections } from "../lib/projectCatalog";
 import { getStaticPageMeta } from "../lib/site";
 
 usePageMeta(getStaticPageMeta("projects"));
 
+const caseStudies = ref<ContentEntry[]>([]);
+const isLoadingCaseStudies = ref(true);
 const yearSections = getProjectYearSections();
+const hasCaseStudies = computed(() => caseStudies.value.length > 0);
+
+onMounted(async () => {
+  const projects = await getProjects();
+  caseStudies.value = projects.filter((project) => project.source === "local");
+  isLoadingCaseStudies.value = false;
+});
 </script>
 
 <template>
   <section class="page-header reveal projects-catalog-hero">
     <div class="projects-catalog-copy">
       <p class="eyebrow">Projects</p>
-      <h1 class="page-title">Живая карта проектов на GitHub</h1>
+      <h1 class="page-title">Проекты, кейсы и живая карта GitHub</h1>
       <p class="page-lead">
-        Репозитории и личные проекты, сгруппированные по году старта и активности.
+        Сначала оформленные кейсы с отдельными страницами, ниже публичные репозитории,
+        сгруппированные по году старта и активности.
       </p>
     </div>
+  </section>
+
+  <section class="list-section reveal">
+    <h2 class="section-title">Оформленные кейсы</h2>
+    <p class="home-status">
+      Здесь собраны проекты, для которых уже есть отдельные страницы с описанием, summary и ссылками.
+    </p>
+
+    <p v-if="isLoadingCaseStudies" class="gh-muted">Загружаю кейсы...</p>
+    <p v-else-if="!hasCaseStudies" class="gh-muted">Пока нет оформленных кейсов.</p>
+
+    <div v-else class="entry-list">
+      <ProjectEntryRow
+        v-for="project in caseStudies"
+        :key="project.slug"
+        :project="project"
+        :show-logo="true"
+      />
+    </div>
+  </section>
+
+  <section class="list-section reveal">
+    <h2 class="section-title">Живая карта GitHub</h2>
+    <p class="home-status">
+      Публичные репозитории и активные проекты, сгруппированные по времени старта и текущей активности.
+    </p>
   </section>
 
   <section

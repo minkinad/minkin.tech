@@ -354,6 +354,26 @@ select {
   gap: 0.88rem;
 }
 
+.home-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.home-title-avatar {
+  width: 2.85rem;
+  height: 2.85rem;
+  flex-shrink: 0;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: var(--panel);
+  object-fit: cover;
+  box-shadow:
+    0 0 0 1px var(--active-ring),
+    0 10px 26px rgba(0, 0, 0, 0.14);
+}
+
 .home-support {
   display: grid;
   gap: 1.5rem;
@@ -362,6 +382,10 @@ select {
 .home-hero .page-title,
 .home-hero .page-lead,
 .home-hero .home-line {
+  max-width: none;
+}
+
+.home-title-row .page-title {
   max-width: none;
 }
 
@@ -1350,6 +1374,16 @@ img.stack-chip-logo,
   .page-title {
     max-width: 14ch;
     font-size: clamp(1.8rem, 9vw, 2.45rem);
+  }
+
+  .home-title-row {
+    align-items: flex-end;
+    gap: 0.7rem;
+  }
+
+  .home-title-avatar {
+    width: 2.4rem;
+    height: 2.4rem;
   }
 
   .projects-stat-grid,

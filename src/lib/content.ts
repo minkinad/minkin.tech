@@ -23,6 +23,8 @@ export interface ContentEntry {
 export interface HomeStackItem {
   name: string;
   href?: string;
+  logoSrc?: string;
+  logoAlt?: string;
 }
 
 export interface HomeStackGroup {
@@ -235,7 +237,9 @@ const normalizeHomeStackGroups = (value: FrontmatterValue | undefined): HomeStac
             .filter(isObjectValue)
             .map((item) => ({
               name: toStringValue(item.name) ?? "",
-              href: toStringValue(item.href)
+              href: toStringValue(item.href),
+              logoSrc: toStringValue(item.logoSrc),
+              logoAlt: toStringValue(item.logoAlt)
             }))
             .filter((item) => item.name)
         : [];
@@ -273,7 +277,7 @@ export const getHomePageContent = (): HomeContent => {
   const { attributes, body, html } = parseMarkdown(raw);
 
   return {
-    eyebrow: toStringValue(attributes.eyebrow) ?? "Backend Developer",
+    eyebrow: toStringValue(attributes.eyebrow) ?? "FullStack Developer",
     title: toStringValue(attributes.title) ?? siteConfig.displayName,
     lead: toStringValue(attributes.lead) ?? siteConfig.defaultDescription,
     subtitle: toStringValue(attributes.subtitle) ?? "",

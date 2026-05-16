@@ -14,9 +14,12 @@ const trimTrailingSlash = (value: string): string => value.replace(/\/+$/, "");
 const getLastPathSegment = (value: string): string => trimTrailingSlash(value).split("/").at(-1) ?? "";
 
 const buildSectionTitle = (label: string): string => `${label} — ${siteMetadata.displayName}`;
+export const getGithubAvatarUrl = (account: string, size = 96): string =>
+  `https://github.com/${account.replace(/^@/, "").trim()}.png?size=${size}`;
 
 export const GITHUB_USERNAME = siteMetadata.githubUsername;
 export const GITHUB_PROFILE_URL = trimTrailingSlash(siteMetadata.social.github);
+export const GITHUB_AVATAR_URL = getGithubAvatarUrl(GITHUB_USERNAME);
 export const GITHUB_PROFILE_LABEL = GITHUB_PROFILE_URL.replace(/^https?:\/\//, "");
 export const TELEGRAM_URL = trimTrailingSlash(siteMetadata.social.telegram);
 export const TELEGRAM_HANDLE = getLastPathSegment(TELEGRAM_URL);

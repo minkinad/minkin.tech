@@ -3,7 +3,7 @@ import { RouterLink } from "vue-router";
 import GithubActivityWidget from "../components/GithubActivityWidget.vue";
 import { getGithubActivity, getGithubDataStatus, getHomePageContent } from "../lib/content";
 import { usePageMeta } from "../lib/meta";
-import { getStaticPageMeta } from "../lib/site";
+import { GITHUB_AVATAR_URL, getStaticPageMeta } from "../lib/site";
 
 const home = getHomePageContent();
 const activity = getGithubActivity();
@@ -40,7 +40,17 @@ usePageMeta({
 <template>
   <section class="page-header reveal home-hero">
     <p class="eyebrow">{{ home.eyebrow }}</p>
-    <h1 class="page-title">{{ home.title }}</h1>
+    <div class="home-title-row">
+      <img
+        class="home-title-avatar"
+        :src="GITHUB_AVATAR_URL"
+        :alt="`${home.title} GitHub avatar`"
+        width="56"
+        height="56"
+        decoding="async"
+      />
+      <h1 class="page-title">{{ home.title }}</h1>
+    </div>
     <p class="page-lead">{{ home.lead }}</p>
     <p class="home-line">{{ home.subtitle }}</p>
 
@@ -56,6 +66,16 @@ usePageMeta({
               :target="item.href ? '_blank' : undefined"
               :rel="item.href ? 'noreferrer noopener' : undefined"
             >
+              <img
+                v-if="item.logoSrc"
+                :src="item.logoSrc"
+                :alt="item.logoAlt ?? `${item.name} logo`"
+                class="stack-chip-logo"
+                width="16"
+                height="16"
+                loading="lazy"
+                decoding="async"
+              />
               {{ item.name }}
             </component>
             <span v-if="group.separator && index < group.items.length - 1" class="stack-separator">
